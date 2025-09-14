@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/256/12539/12539811.png" type="image/x-icon" />
+			<link rel="shortcut icon" href="https://y259nvmlltdutuek.public.blob.vercel-storage.com/favicon.png" type="image/x-icon" />
 			<body className={inter.className}>
 				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
 					<div className="relative min-h-screen flex flex-col">

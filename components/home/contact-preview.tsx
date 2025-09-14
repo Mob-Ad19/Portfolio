@@ -35,9 +35,10 @@ export function ContactPreview() {
 		<section className="py-16 md:py-24 bg-muted/30">
 			<div className="container px-4">
 				<SectionHeader
-					title="Get In Touch"
-					description="Interested in working together or have a question? Feel free to reach out!"
-					className="text-center"
+					title="Let's Build the Future"
+					description="Have a complex challenge or an innovative idea? 
+					I'm always open to discussing new projects and collaboration opportunities."
+					className=""		
 				/>
 
 				<motion.div
@@ -47,40 +48,46 @@ export function ContactPreview() {
 					viewport={{ once: true }}
 					className="max-w-md mx-auto mt-10"
 				>
-					<form onSubmit={handleSubmit} className="space-y-4">
-						<div>
-							<Input
-								name="name"
-								placeholder="Your Name"
-								value={formState.name}
-								onChange={handleChange}
-								required
-							/>
-						</div>
-						<div>
-							<Input
-								name="email"
-								type="email"
-								placeholder="Your Email"
-								value={formState.email}
-								onChange={handleChange}
-								required
-							/>
-						</div>
-						<div>
-							<Textarea
-								name="message"
-								placeholder="Your Message"
-								value={formState.message}
-								onChange={handleChange}
-								required
-								className="min-h-[150px]"
-							/>
-						</div>
-						<Button type="submit" className="w-full">
+				<div className="max-w-md mx-auto mt-10">
+				<div className="space-y-4">
+					<div>
+						<Input
+							name="name"
+							placeholder="Your Name"
+							value={formState.name}
+							onChange={handleChange}
+							required
+						/>
+					</div>
+					<div>
+						<Input
+							name="email"
+							type="email"
+							placeholder="Your Email (for my reply)"
+							value={formState.email}
+							onChange={handleChange}
+							required
+						/>
+					</div>
+					<div>
+						<Textarea
+							name="message"
+							placeholder="Your Message"
+							value={formState.message}
+							onChange={handleChange}
+							required
+							className="min-h-[150px]"
+						/>
+					</div>
+					<Button asChild className="w-full">
+						<a
+							href={`mailto:mo.adarissi@gmail.com?subject=Contact from Portfolio - ${formState.name}&body=${encodeURIComponent(formState.message + "\n\nFrom: " + formState.email)}`}
+						>
 							Send Message <Send className="ml-2 h-4 w-4" />
-						</Button>
-					</form>
+						</a>
+					</Button>
+				</div>
+			</div>
 				</motion.div>
 			</div>
 		</section>

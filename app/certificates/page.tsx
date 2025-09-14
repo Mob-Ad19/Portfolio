@@ -34,44 +34,33 @@ export default function CertificatesPage() {
 								key={index}
 								variants={fadeIn('up', 0.2 * index)}
 							>
-								<Card className="card-gradient">
-									<CardContent className="p-6">
+							<Card className="card-gradient flex flex-col h-full">
+									<CardContent className="p-6 flex-grow">
 										<div className="flex items-start gap-4">
-											<Award className="h-8 w-8 text-primary shrink-0" />
+											<Award className="h-8 w-8 text-primary shrink-0 mt-1" />
 											<div>
 												<h2 className="text-xl font-semibold mb-2">{cert.title}</h2>
 												<p className="text-muted-foreground">{cert.issuer}</p>
 												<p className="text-sm text-muted-foreground mt-2">
 													Issued: {cert.date}
 												</p>
-												{cert.id && (
-													<p className="text-sm text-muted-foreground">
-														Certificate ID: {cert.id}
-													</p>
-												)}
+												{/* The Certificate ID text is now removed */}
 											</div>
 										</div>
 									</CardContent>
-									<CardFooter className="p-6 pt-0 gap-2">
-										{cert.url && (
-											<Button size="sm" variant="outline" asChild>
-												<a href={cert.url} target="_blank" rel="noreferrer">
-													<ExternalLink className="h-4 w-4 mr-2" />
-													Verify
-												</a>
-											</Button>
-										)}
+									<CardFooter className="p-6 pt-0">
+										{/* This footer now only shows the Download button */}
 										{cert.pdf && (
-											<Button size="sm" variant="outline" asChild>
-												<a href={cert.pdf} download>
+											<Button size="sm" variant="outline" asChild className="w-full">
+												<a href={cert.pdf} target="_blank" rel="noopener noreferrer">
 													<FileDown className="h-4 w-4 mr-2" />
-													Download
+													View Certificate
 												</a>
 											</Button>
 										)}
 									</CardFooter>
-								</Card>
-							</motion.div>
+							</Card>
+						</motion.div>
 						))}
 					</div>
 				</motion.div>

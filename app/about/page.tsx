@@ -21,20 +21,20 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
-							I am a passionate engineering student with a focus on innovation and problem-solving.
-							My academic journey has equipped me with strong technical skills and a deep understanding
-							of engineering principles.
+							I am an Industrial Engineer specializing in the architecture of intelligent systems for Industry 4.0.
+							With a Master's focus on Smart Industry, I design and implement solutions 
+							that merge IoT, automation, and data analytics to optimize complex manufacturing processes.
 						</p>
 						<div className="space-y-4">
-							<h2 className="text-2xl font-semibold">My Journey</h2>
+							<h2 className="text-2xl font-semibold">My Mission</h2>
 							<p className="text-muted-foreground">
-								Throughout my academic career, I've been involved in various projects that have
-								helped me develop practical skills and theoretical knowledge. I believe in
-								continuous learning and staying updated with the latest technological advancements.
+								 My mission is to bridge the gap between physical machinery and intelligent software.
+								 I thrive on developing predictive maintenance systems, creating digital twins for simulation,
+								 and automating industrial operations with robotics and embedded systems to drive efficiency and innovation.
 							</p>
 						</div>
 						<Button className="mt-6" asChild>
-							<a href="/cv.pdf" download>
+							<a href="https://y259nvmlltdutuek.public.blob.vercel-storage.com/portfolio5.jpg" download>
 								Download CV <ArrowDownCircle className="ml-2 h-4 w-4" />
 							</a>
 						</Button>
@@ -42,8 +42,8 @@ export default function AboutPage() {
 
 					<motion.div variants={fadeIn('left', 0.3)} className="relative h-[500px]">
 						<Image
-							src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg"
-							alt="Professional photo"
+							src="https://y259nvmlltdutuek.public.blob.vercel-storage.com/portfolio5.jpg"
+							alt="Mohamed El Adarissi"
 							fill
 							className="object-cover rounded-lg"
 							sizes="(max-width: 768px) 100vw, 50vw"
@@ -62,8 +62,8 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Education</h3>
 								<p className="text-muted-foreground">
-									Currently pursuing a Bachelor's degree in Engineering with a focus on
-									practical applications and innovative solutions.
+									Master's in Smart Industry and a Bachelor's in Industrial Engineering, providing a strong foundation in both 
+									classical process optimization and modern digital transformation.
 								</p>
 							</CardContent>
 						</Card>
@@ -74,8 +74,9 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Experience</h3>
 								<p className="text-muted-foreground">
-									Gained valuable experience through internships and projects, working
-									with cutting-edge technologies and methodologies.
+									Hands-on experience in industrial maintenance and automation.
+									Proven ability to diagnose complex systems, optimize processes,
+									and manage projects from concept to completion.
 								</p>
 							</CardContent>
 						</Card>
@@ -84,10 +85,11 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('up', 0.3)}>
 						<Card className="h-full card-gradient">
 							<CardContent className="p-6">
-								<h3 className="text-xl font-semibold mb-4">Skills</h3>
+								<h3 className="text-xl font-semibold mb-4">Core Skills</h3>
 								<p className="text-muted-foreground">
-									Proficient in various engineering tools and technologies, with a strong
-									foundation in problem-solving and analytical thinking.
+									 Proficient in IoT systems, Automation, robotics, Mechatronics,
+								embedded systems , and cloud platforms 
+									 for data analysis and real-time monitoring.
 								</p>
 							</CardContent>
 						</Card>
