@@ -34,7 +34,7 @@ export default function AboutPage() {
 							</p>
 						</div>
 						<Button className="mt-6" asChild>
-							<a href="https://y259nvmlltdutuek.public.blob.vercel-storage.com/portfolio5.jpg" download>
+							<a href="https://y259nvmlltdutuek.public.blob.vercel-storage.com/MOHAMED%20EL%20ADARISSI_Robotics%20Engineering%20Intern.pdf" download>
 								Download CV <ArrowDownCircle className="ml-2 h-4 w-4" />
 							</a>
 						</Button>
