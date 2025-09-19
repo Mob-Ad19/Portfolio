@@ -66,8 +66,15 @@ export const metadata: Metadata = {
         'max-image-preview': 'large',
         'max-snippet': -1,
     }
-  }
+  }, // Add a comma here
+
+  // --- PASTE THE NEW VERIFICATION BLOCK HERE ---
+  verification: {
+    google: 'b0rTYZJoVHk8NP_5e0_dB9N6ZkREwLqp80p9S3KFm1U',
+  },
+
 };
+
 
 // --- 3. THE REST OF YOUR ORIGINAL FILE IS PRESERVED PERFECTLY ---
 export default function RootLayout({
