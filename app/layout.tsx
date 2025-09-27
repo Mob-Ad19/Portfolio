@@ -5,18 +5,18 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
-import { personalData } from '@/lib/constants'; // 1. We import your personal data
+import { personalData } from '@/lib/constants'; 
 
 const inter = Inter({ subsets: ['latin'] });
 
-// --- 2. THIS IS THE NEW, SEO-OPTIMIZED METADATA BLOCK ---
+
 export const metadata: Metadata = {
-  // This tells Google the base URL of your site.
-  metadataBase: new URL('https://mohamedeladarissi.vercel.app/'), // <-- CRITICAL: REPLACE WITH YOUR VERCEL URL
+  
+  metadataBase: new URL('https://mohamedeladarissi.vercel.app/'), 
   
   title: {
-    default: `Mohamed El Adarissi | Industrial Engineer Portfolio`, // The main title of your site
-    template: `%s | Mohamed El Adarissi`, // The title format for other pages
+    default: `Mohamed El Adarissi | Industrial Engineer Portfolio`, 
+    template: `%s | Mohamed El Adarissi`,
   },
   
   description: personalData.description,
